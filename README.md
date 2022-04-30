@@ -1,6 +1,7 @@
 # tingServer
 该并发服务器框架模仿 陈硕的Muduo库来实现，采用reactor + threadpool的模式，是一个能适应密集计算的并发服务器框架。该项目主要分为两个部分：reactor+ threadpool。reactor负责将TCP连接进行封装，并采用Event-Loop模式结合epoll多路复用进行监听，然后注册相应的回调函数，并且将IO线程与计算线程分离。
-目录结构
+
+目录结构:
 ```txt
 ├─Acceptor.cpp 
 ├─Acceptor.h 
